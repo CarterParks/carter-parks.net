@@ -108,7 +108,6 @@ box-shadow: inset 13px 13px 25px #949596,
 
 #back.button{
     postion: absolute;
-    margin: 10px;
     transform: 0.5;
     -moz-transform: scale(0.5);
 }
@@ -126,8 +125,8 @@ box-shadow: inset 13px 13px 25px #949596,
 }
 
 #frame-in{
-    width: 350px;
-    height: 350px;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
     border-radius: 60px;
     background: #E8E9EB;
     box-shadow: inset -25px 25px 50px #c5c6c8, 
@@ -140,27 +139,37 @@ box-shadow: inset 13px 13px 25px #949596,
 
 #about-container{
     position: absolute;
-    left: calc(30% - 300px);
-    top: calc(50% - 200px);
+    left: calc(35% - 250px);
+    top: calc(50% - 290px);
 }
 
-.talk-block{
-    border-radius: 30px;
-    width: 600px;
-    height: 150px;
-    padding: 30px;
-    margin: auto;
-    margin-bottom: 60px;
+#talk-block-out{
+    border-radius: 65px;
+    width: 500px;
+    height: 350px;
     background: #E8E9EB;
     box-shadow:  -34px 34px 69px #c5c6c8, 
              34px -34px 69px #ffffff;
 }
 
+#talk-block-in{
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-radius: 50px;
+    background: #E8E9EB;
+    box-shadow: inset -20px 20px 60px #bababc, 
+                inset 20px -20px 60px #ffffff;
+}
+
+#talk-block-in p{
+padding:35px;
+}
+
 .contact-block{
-    margin: auto;
-    margin-bottom: 60px;
-    margin-top: 60px;
     border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
     width: 300px;
     height: 60px;
     background: #E8E9EB;
